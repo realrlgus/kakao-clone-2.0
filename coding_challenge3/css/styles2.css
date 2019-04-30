@@ -1,0 +1,61 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.profile {
+  width: 200px;
+  height: 500px;
+  background-color: #ffffff;
+}
+.profile .profile__background {
+  background-image: url("../images/background-main.jpg");
+  background-repeat: none;
+  width: 200px;
+  height: 200px;
+}
+
+.profile .profile__image {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.profile .profile__image img {
+  border-radius: 50%;
+}
+
+.profile .profile__name {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.profile .profile__job {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  opacity: 0.7;
+}
+
+.profile .profile__btn {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.profile .profile__btn .profile__btn__column:first-child {
+  background-color: #6a74ff;
+  padding: 15px 0px;
+  color: white;
+  cursor: pointer;
+}
+
+.profile .profile__btn .profile__btn__column:last-child {
+  padding: 15px 20px;
+  color: #6a74ff;
+  cursor: pointer;
+}
