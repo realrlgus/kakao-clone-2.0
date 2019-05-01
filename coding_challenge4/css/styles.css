@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import "../css/reset.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #020202;
+  background-color: #f7f7f7;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 350px;
+  height: 600px;
+  overflow-y: hidden;
+  margin: 0 auto;
+  border-radius: 5%;
+  box-shadow: 20px 18px 20px 0px gray;
+}
+
+.header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.header .header__column,
+.input .input__column,
+.signin__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__title {
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.signin {
+  margin: 0px 20px 0px 20px;
+}
+.input .g-input {
+  padding: 12px 10px;
+  width: 100%;
+  margin: 15px 0px 15px 0px;
+  border: 1px solid #dddddd;
+  opacity: 0.3;
+}
+
+.signin__forgot {
+  display: flex;
+  justify-content: flex-end;
+}
+.signin__link {
+  color: #e86573;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.signin__remember {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.signin__remember .signin__remember-chk {
+  /*
+    checkbox css is so hard -_-
+    */
+}
+.signin__remember .signin__remember-text {
+  font-size: 13px;
+  opacity: 0.3;
+  font-weight: 600;
+}
+.signin__button {
+  padding: 10px 14px;
+  border-radius: 20px;
+  margin: 33px 0px;
+}
+.button-signin {
+  width: 100%;
+  background-color: #e2283e;
+}
+.signin__button .signin__button-text {
+  color: white;
+  font-size: 11px;
+}
+.signin__or .signin__or-text {
+  font-weight: 600;
+}
+.signin__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signin__social .button-facebook,
+.button-twitter {
+  width: 45%;
+}
+
+.signin__social .button-facebook {
+  background-color: #475a95;
+}
+.signin__social .button-twitter {
+  background-color: #5ca1f2;
+}
+
+.signin__footer__column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.signin__footer__column .signin__footer__column-text {
+  opacity: 0.3;
+  font-size: 12px;
+  margin-right: 5px;
+}
