@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500, 600, 700");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.profile {
+  padding: 10px 20px;
+  backgroud-image: url();
+  height: 100vh;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.status-bar .status-bar__timestamp {
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.profile__info__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.7;
+  margin-bottom: 70px;
+}
+
+.profile__info__header i {
+  font-size: 22px;
+}
+
+.column {
+  display: flex;
+  justify-content: cneter;
+  align-items: center;
+  flex-direction: column;
+}
+
+.column__img .column__img-box {
+  width: 70px;
+  height: 70px;
+  background-image: url("https://github.com/realrlgus/kakao-clone-2.0/blob/master/images/avator.jpg?raw=true");
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.column__img,
+.column__name {
+  margin-bottom: 20px;
+}
+
+.column__name .column__name-text {
+  color: #69aae1;
+  font-weight: 600;
+  font-size: 24px;
+}
+.column__country {
+  margin-bottom: 30px;
+}
+
+.column__country .column__country-text {
+  font-size: 18px;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn .column__btn {
+  padding: 15px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 3px #d7d6d2;
+  margin-bottom: 30px;
+}
+.btn .column__btn:last-child {
+  color: white;
+  background-color: #2799f9;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.progress .progress__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  padding: 20px 50px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.footer__column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column i {
+  font-size: 22px;
+}
+
+.footer__column i:first-child {
+  color: blue;
+}
