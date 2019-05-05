@@ -1,0 +1,198 @@
+@import "reset.css";
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.animation__column {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.animation__box-main,
+.animation__box-main2,
+.animation__box-main3,
+.animation__box-sub {
+  width: 600px;
+  height: 600px;
+}
+.animation__box-main {
+  background-image: url("https://i.pinimg.com/originals/60/ee/69/60ee6916e93413b06e8b319a21521fc3.png");
+}
+
+.animation__box-sub {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  background-color: #283949;
+  margin: 0;
+  transition: opacity 0.3s ease-in, margin 0.3s ease-in;
+}
+
+.animation__box-main:hover ~ .animation__box-sub,
+.animation__box-sub:hover {
+  opacity: 1;
+  margin: 15px;
+}
+
+.animation__box-sub .box-sub__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.box-sub__title .box-sub__title-text {
+  color: white;
+  font-size: 20px;
+}
+.animation__box-sub .box-sub__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.box-sub__copyright .box-sub__copyright-text {
+  color: red;
+  font-size: 16px;
+}
+
+.animation__box-sub .box-sub__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-sub__btn .box-sub__btn-text {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+}
+
+.animation__column2 {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.animation__column2 .animation__box-main2 {
+  background-image: url("https://cdn.dribbble.com/users/131151/screenshots/1118904/iosicons_drb6.png");
+  transition: transform 0.3s ease-in;
+}
+.animation__box-main2:hover {
+  transform: translateY(-100px);
+}
+
+.animation__column2 .animation__box-sub2 {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  padding: 0px 5px;
+  bottom: 0;
+  background-color: #283949;
+  height: 0px;
+  width: 100%;
+  transition: height 0.3s ease-in;
+}
+
+.animation__box-main2:hover ~ .animation__box-sub2 {
+  height: 100px;
+}
+
+.animation__box-sub2 .box-sub__title2 {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.box-sub__title2 .box-sub__title2-text {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.animation__box-sub2 .box-sub__copyright2 {
+  display: flex;
+  padding-left: 20px;
+}
+
+.box-sub__copyright2 .box-sub__copyright2-text {
+  color: red;
+  font-size: 16px;
+}
+
+.animation__box-sub2 .box-sub__btn2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+.box-sub__btn2 .box-sub__btn2-text {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+}
+
+.animation__column3 {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.animation__column3 .animation__box-main3 {
+  background-image: url("https://cdn.dribbble.com/users/131151/screenshots/1116775/iosicons_drb4.png");
+  position: absolute;
+  transition: transform 0.5s ease-in;
+}
+.animation__column3 .animation__box-sub3 {
+  position: absolute;
+  bottom: 0;
+  height: 600px;
+  width: 600px;
+  background-color: #283949;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.animation__box-main3:hover {
+  transform: scaleY(0.5) scaleX(0.6);
+}
+
+.animation__box-sub3 .box-sub__title3 {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.box-sub__title3 .box-sub__title3-text {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.animation__box-sub3 .box-sub__copyright3 {
+  display: flex;
+  padding-left: 20px;
+}
+
+.box-sub__copyright3 .box-sub__copyright3-text {
+  color: red;
+  font-size: 16px;
+}
+
+.animation__box-sub3 .box-sub__btn3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+.box-sub__btn3 .box-sub__btn3-text {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+}

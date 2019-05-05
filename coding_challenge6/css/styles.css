@@ -4,10 +4,14 @@
 * {
   box-sizing: border-box;
 }
+.body {
+  padding: 10px 20px;
+  background-color: #2698f9;
+}
 
 .profile {
   padding: 10px 20px;
-  backgroud-image: url();
+  background-image: url("https://github.com/realrlgus/kakao-clone-2.0/blob/master/coding_challenge6/images/Bg.jpg?raw=true");
   height: 100vh;
 }
 
