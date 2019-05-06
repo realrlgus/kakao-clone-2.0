@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600, 700");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.receipes {
+  padding: 10px;
+  background-color: #ededed;
+}
+
+.receipes .receipes__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.receipes__section .section__header {
+  margin-bottom: 10px;
+}
+
+.section__header .section__header-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.section__header .section__header-viewall {
+  color: red;
+  cursor: pointer;
+}
+
+.receipes__section .section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__header .section__header-title {
+  font-size: 13px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  flex-wrap: wrap;
+}
+.gallery .gallery__column-item {
+  width: 47%;
+  height: 100px;
+  background-image: url("https://cdn-image.myrecipes.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/tkphoto_0405180056.jpg?itok=TkK0Wsuh");
+  background-size: cover;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card .card-title {
+  display: block;
+}
+
+.card .card-count {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.card i {
+  color: red;
+  font-size: 24px;
+}
+
+.receipes__nav {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  bottom: 0px;
+  padding: 20px;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
+}
+.receipes__nav .receipes__nav__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.receipes__nav .receipes__nav__icon:nth-child(2) {
+  color: Red;
+}
